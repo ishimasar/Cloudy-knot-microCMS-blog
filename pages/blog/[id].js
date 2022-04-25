@@ -1,11 +1,14 @@
 import { client } from '../../libs/client';
 import styles from '../../styles/Home.module.scss';
+import Moment from 'react-moment';
 
 export default function BlogId({ blog }) {
   return (
-    <main className={styles.main}>
+    <main className={styles.mainWrapper}>
       <h1 className={styles.title}>{blog.title}</h1>
-      <p className={styles.publishedAt}>{blog.publishedAt}</p>
+      <Moment format="YYYY.MM.DD" className={styles.publishedAt}>
+        {blog.publishedAt}
+      </Moment>
       <p className="category">{blog.category && `${blog.category.name}`}</p>
       <div
         dangerouslySetInnerHTML={{
