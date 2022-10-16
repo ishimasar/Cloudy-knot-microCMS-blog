@@ -10,6 +10,7 @@
   "dependencies": {
     "microcms-js-sdk": "^2.0.0",
     "moment": "^2.29.3",
+    "moment-timezone": "^0.5.38",
     "next": "^12.3.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -17,6 +18,7 @@
     "sass": "^1.47.0"
   },
   "devDependencies": {
+    "@types/node": "18.11.0",
     "@types/react": "^18.0.21",
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.7",
